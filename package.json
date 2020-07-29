@@ -1,0 +1,24 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "sinhala pali app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --max_old_space_size=512 app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "SE_2015_014",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
