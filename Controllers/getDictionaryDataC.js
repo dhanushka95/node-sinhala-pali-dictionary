@@ -13,14 +13,14 @@ exports.validateDictionaryGet = (req, res, next) => {
             return res.status(200).json({
                 statusCode: StatusCodes.ValidationError,
                 message: error.details[0].message,
-                data: null
+                data: []
             });
         } else {
             next();
         }
     } catch (err) {
         res.status(200).json({
-            data: null,
+            data: [],
             message: 'Dictionary Get Validation Error',
             statusCode: StatusCodes.ValidationError
         });
@@ -65,7 +65,7 @@ exports.dictionaryDataGet = async (req, res) => {
     } catch (e) {
         console.log(e);
         res.status(200).json({
-            data: null,
+            data: [],
             message: 'Dictionary Get DB Error',
             statusCode: StatusCodes.DBError
         });
