@@ -14,3 +14,4 @@ app.use(cors());
 app.use('/dictionary',require('./Routes/dictionaryR'));
 
 app.listen(5010);
+console.log('Pali dictionary server start on port:',5010);
